@@ -59,6 +59,53 @@ def Short(frequency,temperature=25,c=None):
             
     return data
 
+
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+Solids - added by Alex
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+def Teflon(frequency,temperature=25,c=None):
+    eps_teflon = 2.1
+
+    data = {}
+    data['minFREQ'] = -np.inf
+    data['maxFREQ'] = np.inf
+    data['Citation'] = 'None'
+    data['minTemperature (C)'] = -np.inf
+    data['maxTemperature (C)'] = np.inf
+    data['frequency'] = frequency
+    data['Temperature (C)'] = temperature
+    data['epsilon'] = eps_teflon * np.ones((len(frequency)), dtype=complex)
+    return data
+def Polycarbonate(frequency,temperature=25,c=None):
+    eps_polycarbonate = 3.1
+
+    data = {}
+    data['minFREQ'] = -np.inf
+    data['maxFREQ'] = np.inf
+    data['Citation'] = 'None'
+    data['minTemperature (C)'] = -np.inf
+    data['maxTemperature (C)'] = np.inf
+    data['frequency'] = frequency
+    data['Temperature (C)'] = temperature
+    data['epsilon'] = eps_polycarbonate * np.ones((len(frequency)), dtype=complex)
+    return data
+
+def HDPE(frequency,temperature=25,c=None):
+    eps_HDPE = 2.35
+
+    data = {}
+    data['minFREQ'] = -np.inf
+    data['maxFREQ'] = np.inf
+    data['Citation'] = 'None'
+    data['minTemperature (C)'] = -np.inf
+    data['maxTemperature (C)'] = np.inf
+    data['frequency'] = frequency
+    data['Temperature (C)'] = temperature
+    data['epsilon'] = eps_HDPE * np.ones((len(frequency)), dtype=complex)
+    return data
+
+
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 Pure solvents
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
